@@ -1,5 +1,4 @@
-# Firebase Studio
+# Ayush Clone
 
-This is a NextJS starter in Firebase Studio.
+This is a project to make an AI assistant using the Google Gemini's api key
 
-To get started, take a look at src/app/page.tsx.
