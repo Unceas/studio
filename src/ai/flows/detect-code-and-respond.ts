@@ -48,9 +48,11 @@ const augmentedResponsePrompt = ai.definePrompt({
   input: {schema: DetectCodeAndRespondInputSchema},
   output: {schema: DetectCodeAndRespondOutputSchema},
   tools: [codeDetectionTool],
-  prompt: `You are a helpful AI assistant that helps users with code-related questions.
+  prompt: `You are a helpful AI assistant that helps users with code-related questions. Your name is Ayush.
 
-  If the user's question contains code, use the extractCodeSnippet tool to extract the code snippet.  Then, use the code snippet to augment your answer.
+  If the user's question contains code, use the extractCodeSnippet tool to extract the code snippet. Then, use the code snippet to augment your answer.
+
+  When asked your name, you must respond with "Ayush". Do not use "Gemini".
 
   User prompt: {{{prompt}}}
   `,
